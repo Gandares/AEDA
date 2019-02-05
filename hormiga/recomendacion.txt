@@ -1,0 +1,44 @@
+La clase rejilla hacerla lo mas acotada posible, asi en la modificación se cambian menos cosas.
+
+LA LISTA NO ES OBLIGATORIA
+
+Class rejilla{
+private:
+    list<cuadrados> L;
+public: 
+    color getColor(i,j) const;
+    void setColor(i,j,color);
+    ver(i,j);
+};
+
+En principio solo hay dos colores, blanco y negro, por estas últimas pasa la hormiga.
+Se pierde tiempo a la hora de acceder a los cuadrados.
+Formas de acelerar las búsquedas, mantener la lista ordenada.
+
+hormiga se representa <v>^ depende de para donde se mueva.
+
+Class hormiga{
+private:
+    Direccion D;
+    posicion i,j;
+public:
+    void movimiento(color); //La unica clase que debe tener las reglas del movimiento de la hormiga es la clase Hormiga.
+    ver();
+    
+Class maquina{
+private:
+    rejilla;
+    maquina;
+    filainicial;
+    filafinal;
+    colinicial;
+    colfinal;
+public:
+    void inicial();
+    void paso();
+    
+Se desplaza la ventana en cada paso. //Con el array es mas complicado.
+delay();
+
+La clase maquina es la que debe dialogar con los dos.
+Crear primero la clase rejilla y despues hormiga, despues las entrelazas con la clase maquina.
