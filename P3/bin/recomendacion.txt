@@ -1,0 +1,21 @@
+4 colores, blanco ' ', negro 'X', rojo 'R' y azul 'A'.
+enum color={blanco, negro, rojo, azul}
+
+Hacer la clase hormiga abstracta..
+
+virtual color movimiento(color)=0;
+virtual ostream& ver(ostream& os)=0;    //ver a la  hormiga (write de la hormiga)
+
+El cambio de color lo inventamos nosotros.
+
+Crear 4 hormigas (1 por cada color con normas)
+
+switch para el movimiento
+
+INCLUIR NUEVA HORMIGA
+
+copy paste hpp y cpp de la anterior, cambiar nombre de la clase y en el propio write de la hormiga cambiar el numero.
+incluir los nuevos ficheros en maquina .hpp y .cpp y makefile.
+mirar todo el metodo paso y añadir la nueva hormiga.
+Mirar el metodo write y pasarla por parametro tambien.
+Modificar los movimientos de la nueva hormiga para que sea distinta.
